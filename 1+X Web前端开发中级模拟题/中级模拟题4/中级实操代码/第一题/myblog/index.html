@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>前端开发笔记</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- 在（1）处补齐代码，填写固定宽度的容器类 -->
+<div class="（1）">
+  <h2>myblog-前端开发人员的笔记</h2>
+  <br>
+  <!-- 在（2）处补齐代码，填写导航类，在（3）处填写胶囊导航类，在（4）处填写导航选项卡列表 -->
+  <ul class="（2） （3）" role="（4）">
+    <li class="nav-item">
+      <!-- 在（5）处填写当前激活类 -->
+      <a class="nav-link （5）" data-toggle="pill" href="#home">首页</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#menu1">产品</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#menu2">博客</a>
+    </li>
+  </ul>
+
+  <!-- 在（6）处填写导航具体内容 -->
+  <div class="（6）">
+    <!-- 在（7）处根据选项列表分析具体id填写在此处 -->
+    <div id="（7）" class="container tab-pane active" ><br>
+      <p>Bootstrap 是全球最受欢迎的前端组件库，用于开发响应式布局、移动设备优先的 WEB 项目。</p>
+      <p> Bootstrap4 目前是 Bootstrap 的最新版本，是一套用于 HTML、CSS 和 JS 开发的开源工具集。</p>
+      <!-- 首页轮播 -->
+      <!-- 在（8）处填写轮播图类 -->
+      <div id="demo" class="（8） slide" data-ride="carousel" >
+        <!-- 在（9）处填写轮播图指示符类 -->
+        <ul class="（9）">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+       
+        <!-- 在（10）处填写包裹轮播图片类 -->
+        <div class="（10）" >
+          <div class="carousel-item active">
+            <img src="./img/img_fjords_wide.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/img_mountains_wide.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/img_nature_wide.jpg">
+          </div>
+        </div>
+        <!-- 在（11）（12）处填写左右切换按钮类 -->
+        <a class="（11）" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="（12）" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      <!-- 轮播结束 -->
+    </div>
+    <div id="menu1" class="container tab-pane fade"><br>
+        <p>请认真填写问卷，您的意见将帮助我们改进产品.</p>
+        <div> 
+          <form>
+            <!-- 在（13）处填写表单控件组类 -->
+            <div class="（13）">
+              <label for="usr">用户名:</label>
+              <!-- 在（14）处填写表单控件类 -->
+              <input type="text" class="（14）" id="usr">
+            </div>
+            <p>请选择您购买的型号：</p>
+            <!-- 在（15）处填写表单多选框类 -->
+            <div class="（15）">
+              <label class="form-check-label">
+                <!-- 在（16）处填写多选框 -->
+                <input type="checkbox" class="（16）" value="">产品1
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">产品2
+              </label>
+            </div>
+            <!-- 在（17）处填写禁用类 -->
+            <div class="form-check （17）">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="" disabled>产品3
+              </label>
+            </div>
+            <div class="form-group">
+              <!-- 在（18）处填写相关id -->
+              <label for="（18）">评论:</label>
+              <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+            <div>
+              <!-- 在（19）处填写提交按钮 -->
+              <input type="（19）" value="提交">
+            </div>
+          </form>
+    </div>
+    </div>
+    <!-- 在（20）处填写淡入淡出效果 -->
+    <div id="menu2" class="container tab-pane （20）"><br>
+      <p>Bootstrap4 是 Bootstrap 的最新版本，与 Bootstrap3 相比拥有了更多的具体的类以及把一些有关的部分变成了相关的组件。同时 Bootstrap.min.css 的体积减少了40%以上。</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

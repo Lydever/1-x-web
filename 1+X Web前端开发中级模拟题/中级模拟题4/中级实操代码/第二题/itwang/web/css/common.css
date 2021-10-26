@@ -1,0 +1,29 @@
+/*顶部小图标*/
+.indextop>*{margin:0;padding:0;height:30px;line-height: 30px;;}
+.indextop h4{display: inline-block;}
+.indextop ul{display: inline-block;}
+.indextop ul li a{display:block;margin:0;padding:0;height:30px;line-height: 30px;}
+@media only screen and (max-width:768px ) {
+	.indextop{display: none !important;}
+	#youshi .row>div div:first-child{margin-left:33%;}
+	#youshi .row>div div:last-child{margin-left:29%;font-size:20px;}
+}
+/*删除navbar下边20像素边距*/
+.navbar{margin-bottom:0px;}
+
+/*课程列表*/
+.item-header{}
+.item-header span{display:inline-block;font-size: 36px;;}
+.item-header span:first-child,.item-header span:last-child{margin-bottom:10px;width:100px;height:2px;background: #ccc;}
+
+
+/*jiaobu*/
+
+#footer {
+	background-color: #666;
+	border-top: 1px solid #ccc;
+	padding: 20px;
+	text-align: center;
+	color: #eee;
+}
+

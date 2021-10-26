@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>注册/登录</title>
+</head>
+<body>
+    <form action="./check.php" method="post">
+        <table width="400" align="center">
+            <caption>注册/登录</caption>
+            <tbody>
+                <tr>
+                    <td>用户名：</td>
+                    <td><input type="text" name="username" placeholder="请输入用户名"></td>
+                </tr>
+                <tr>
+                    <td>密码：</td>
+                    <td><input type="password" name="password" placeholder="请输入密码"></td>
+                </tr>
+                <tr>
+                    <td>验证码：</td>
+                    <td>
+                        <input type="text" name="capchar" placeholder="请输出用户名" style="vertical-align: middle;">
+<!-- 在（1）处填写代码，引入验证码文件，使用./开始的相对路径 -->
+                        <img src="  （1）   " alt="" style="vertical-align: middle;" id="yanzhengma" />
+                        <script>
+                            var verifyImage = document.getElementById('yanzhengma');
+                            verifyImage.onclick = function () {
+                                // 在（2）处使用Math对象随机生成一个0-1小数，实现点击刷新
+                                this.src = './captcha.php?r=' +     （2）      ;
+                            }
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="登录"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html> 

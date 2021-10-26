@@ -1,0 +1,74 @@
+.carousel-scale .carousel-item img{
+	transform: ___(10)____;/*放大到1.12倍*/
+}
+.carousel-scale .carousel-item.active img {
+	animation: scaleUpDown 1s ___(11)___ cubic-bezier(0.250, 0.460, 0.450, 0.940);/*让动画保持最终状态*/
+}
+@keyframes scaleUpDown {
+	__(12)____ {
+		transform: scale(1.12);
+	}
+	__(13)____ {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+.list{
+	margin-top:2rem;
+}
+.list .item{
+	margin:20px 10px;
+	padding-bottom: 20px;
+	border:1px solid #ccc;
+	_____(14)_____;/*设置边框圆角，四个角都是20px*/
+}
+.list .item .thumb{
+	overflow: hidden;
+	margin-bottom:1rem;
+}
+.list .item .thumb img{
+	width: 100%;
+	transition: all .8s;
+}
+.list .item:hover .thumb img{
+	transform: scale(1.2);
+}
+.list .item h2,.list .item p,.list .item a{
+	padding:0 2rem;
+}
+
+.message{
+	padding:3rem 0;
+	border-top:1px solid #ccc;
+}
+.message .form{
+	border:1px solid #ccc;
+	padding:20px 30px;
+	border-radius: 10px;
+	background-color: #eee;
+}
+.message .form h2{
+	padding:20px 0;
+	text-align: center;
+}
+.message .form h2 span{
+	display: block;
+	font-size: 18px;
+	font-weight: normal;
+}
+.description h2{
+	text-align: center;
+	line-height:70px;
+}
+.description p{
+	line-height: 28px;
+	____(15)_____;//文字首页缩进
+}
+
+.bottom{
+	height: 6rem;
+	line-height: 6rem;
+	text-align: center;
+	background-color: #333;
+	color:#fff;
+}

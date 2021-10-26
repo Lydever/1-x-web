@@ -1,0 +1,11 @@
+create database menbers;		/*如果已有map,直接进入map*/
+use menbers;
+create table users(
+id bigint not null primary key auto_increment,
+uname varchar(40) not null,
+pwd varchar(40) not null,
+nickname varchar(40) not null,
+updtime timestamp not null,
+createtime timestamp not null,
+unique key unameunq(uname)
+)engine=myisam default charset=utf8;

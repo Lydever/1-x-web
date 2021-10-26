@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap 4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- 在（1）添加巨幕类  -->
+    <div class="(1)   text-center" style="margin-bottom:0">
+        <h1>简洁、直观、强悍的前端开发框架。</h1>
+        <p>Bootstrap让web开发更迅速、简单</p>
+</div>
+<!-- 在（2）处添加导航栏类  -->
+<nav class="      （2）       navbar-expand-sm bg-dark navbar-dark">
+<!-- 在（3）处添加高亮显示品牌类  -->
+        <a class="      （3）     " href="#">LOGO</a>
+<!-- 在（4）（5）（6）分别添加类，点击button实现折叠导航菜单  -->
+        <button class="    (4)    " type="button" data-toggle="  (5)    " data-target="  (6)    ">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+<!-- 在（7）处添加类，是所在div包裹导航内容  -->
+        <div class="collapse      (7)     " id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">php</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">H5和css3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">js和jquery</a>
+                </li>
+            </ul>
+        </div>
+</nav>
+<!-- 在（8）处添加固定宽度容器类  -->
+<div class="   （8）   " style="margin-top:30px">
+<!-- 在（9）处添加行类  -->
+        <div class="    （9）   ">
+<!-- 在（10）处添加类，在平板设备上或者屏幕宽度在567px和768px之间的设备上显示为4个栅格  -->
+            <div class="    （10）      ">
+                <h2>前端响应式框架</h2>
+                <h5>logo:</h5>
+                <div class="fakeimg">
+                    图像
+                </div>
+                <p>Bootstrap 是最受欢迎的 HTML、CSS 和 JS 框架，用于开发响应式布局、移动设备优先的 WEB 项目。</p>
+                <h3><a href="###">bootstrap网站</a></h3>
+                <p>常用网站</p>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+<!-- 在（11）处添加类，设置a标签处于激活状态  -->
+                        <a class="nav-link     （11）       " href="#">官网</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">百度</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">新浪</a>
+                    </li>
+                    <li class="nav-item">
+<!-- 在（12）处添加类，设置a标签处于不可用状态  -->
+                        <a class="nav-link      （12）     " href="#">google</a>
+                    </li>
+                </ul>
+                <hr class="d-sm-none">
+            </div>
+<!-- 在（13）处添加类，平板设备上或者屏幕宽度在567px和768px之间的设备上显示为8个栅格  -->
+            <div class="   （13）   ">
+                <h2>html5是html开发的新的标准</h2>
+                <h5>关于html5的介绍</h5>
+                <div class="fakeimg">图像</div>
+                <p>HTML5 是下一代的 HTML</p>
+                <p>
+                    什么是 HTML5？
+                    HTML5 将成为 HTML、XHTML 以及 HTML DOM 的新标准。
+                    HTML 的上一个版本诞生于 1999 年。自从那以后，Web 世界已经经历了巨变。
+                    HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了某些 HTML5 支持。
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

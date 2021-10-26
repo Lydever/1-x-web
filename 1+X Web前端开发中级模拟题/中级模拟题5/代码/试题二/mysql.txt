@@ -1,0 +1,22 @@
+create database map;
+use map;
+SET NAMES gbk;
+create table layers(
+id bigint not null primary key,
+lname varchar(40) not null
+)engine=myisam default charset=utf8;
+insert into layers set id=1,lname='ATM';
+insert into layers set id=2,lname='厕所';
+insert into layers set id=3,lname='健身房';
+insert into layers set id=4,lname='加油站';2.标记表
+create table marks(
+id bigint not null primary key auto_increment,
+lid bigint not null,
+mname varchar(40) not null,
+lng varchar(40) not null,
+lat varchar(40) not null
+)engine=myisam default charset=utf8;
+insert into marks set lid=1,mname='中行ATM',lng='424px',lat='449px';
+insert into marks set lid=1,mname='农行ATM',lng='1140px',lat='471px';
+insert into marks set lid=1,mname='工行ATM',lng='1011px',lat='278px';
+insert into marks set lid=1,mname='中行ATM',lng='494px',lat='124px';

@@ -1,0 +1,20 @@
+create database book;
+use book;
+create table users(
+id bigint not null primary key auto_increment,
+uname varchar(40) not null,
+pwd varchar(40) not null,
+nickname varchar(40) not null,
+role tinyint not null default 0,
+msgnum int not null default 0,
+updtime timestamp not null,
+createtime timestamp not null,
+unique key unameunq(uname)
+)engine=myisam default charset=utf8;
+insert into users set uname='aa',pwd='aa',nickname='aa',createtime=sysdate();
+insert into users set uname='bb',pwd='bb',nickname='bb',createtime=sysdate();
+insert into users set uname='cc',pwd='cc',nickname='cc',createtime=sysdate();
+insert into users set uname='dd',pwd='dd',nickname='dd',createtime=sysdate();
+insert into users set uname='ee',pwd='ee',nickname='ee',createtime=sysdate();
+insert into users set uname='ff',pwd='ff',nickname='ff',createtime=sysdate();
+insert into users set uname='gg',pwd='gg',nickname='gg',createtime=sysdate();

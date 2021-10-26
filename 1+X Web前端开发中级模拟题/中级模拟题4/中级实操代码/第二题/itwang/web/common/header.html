@@ -1,0 +1,91 @@
+<!--顶部top-->
+
+		<div class="container indextop">
+			<h4>中国移动互联网教育品牌</h4>
+			<ul class="nav nav-pills pull-right">
+				<li><a href="###" class="text-muted marginR">XXX大学</a></li>
+				<li><a href="###" class="text-muted marginR">联系我们</a></li>
+				<li><a href="###" class="text-muted marginR">加入收藏</a></li>
+				<li><a href="/project/admin/adminWeb/login.php" class="text-muted marginR">后台管理</a></li>
+				<li><a href="###" class="marginR"><img src="img/qq.png"/></a></li>
+				<li><a href="###" class="marginR"><img src="img/wechat.png"/></a></li>
+				<li><a href="###"class="marginR"><img src="img/weibo.png"/></a></li>
+				<li>400-025-8883</li>
+			</ul>
+		</div>
+		<!--顶部top-->
+		<!--导航-->
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarcollapse1">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.php">
+						<img src="img/news_logo.png" style="width:auto;height:50px;position:relative;top:-15px;" />
+					</a>
+				</div>
+				
+				<div id="navbarcollapse1" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.php">首页</a></li>
+						<li><a href="information.php">资讯</a></li>
+						<li><a href="case.php">企业案例</a></li>
+						<li><a href="about.php">关于我们</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">课程体系<span class="caret"></span></a>
+							<ul id="submenu" class="dropdown-menu">
+								<li><a href="###">web前端</a></li>
+								<li><a href="###">室内设计</a></li>
+								<li><a href="###">室外设计</a></li>
+								<li class="divider"></li>
+								<li><a href="###">工业设计</a></li>
+								<li class="divider"></li>
+								<li><a href="###">平面设计</a></li>
+							</ul>
+						</li>
+					</ul>
+					
+					<form action="" class="navbar-form navbar-left">
+						<div class="input-group">
+							<input type="search" class="form-control" placeholder="找课程" />
+							<div class="input-group-btn">
+								<button class="btn btn-primary">提交</button>
+							</div>
+						</div>
+					</form>
+					
+					<ul class="nav navbar-nav navbar-right">
+						<?php 
+						if(@$_SESSION["username"]){
+							?>
+							<li><a href="login.php"><?php echo $_SESSION["username"]; ?></a></li>
+							<li><a href="?action=del">退出</a></li>
+							
+							<?php
+						}else{
+							?>
+							<li><a href="login.php">登录</a></li>
+							<li><a href="login.php">注册</a></li>
+						<?php	
+						}
+						if(@$_GET["action"]=="del"){
+							$_SESSION=array();
+							echo "<script>location.href='login.php';</script>";
+						}
+						 ?>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">关注我们<span class="caret"></span></a>
+							<ul id="submenu" class="dropdown-menu">
+								<li><a href="###" id="yonganli"  data-toggle="popover" data-placement="left" data-trigger="hover" title="联系电话：" data-content="刘老师:12345678954">永安里校区</a></li>
+								<li><a href="###">国贸校区</a></li>
+								<li><a href="###">中关村校区</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--导航-->

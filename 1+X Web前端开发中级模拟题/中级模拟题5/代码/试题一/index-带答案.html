@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+<!— 导入bootstrap的三个必须的引入文件-->
+  <link rel="stylesheet" href="./bootstrap-4.3.1/css/bootstrap.min.css">
+  <script src="./bootstrap-4.3.1/js/jquery.min.js"></script>
+  <script src="./bootstrap-4.3.1/js/bootstrap.min.js"></script>
+  <style>
+	.item{
+		Border: 1px solid green; /*边框为一个像素，实线，绿色*/
+		height:120px;
+		margin:3px;
+	}
+	.navbar-nav>li{
+		margin-right:6px;
+	}
+  </style>
+ </head>
+ <body>
+<!-- (让导航条右侧列表在桌面显示器上显示，更小就隐藏) -->
+ <div class="navbar  navbar-expand-lg bg-dark navbar-dark align-items-start">
+	<div style='color:#fff;'> 
+		慧谷阳光科技有限公司
+	</div>
+	<!-- (设置导航栏元素居右) -->
+	<div class="navbar-header  ml-auto">
+		<!--  (设置折叠按钮的触发事件（折叠）和所针对的折叠对象) -->
+		<button class="navbar-toggler" data-toggle="collapse" type='button' data-target="navBar">
+				<span class="navbar-toggler-icon"></span>
+		</button>
+		<!--  (设置为折叠导航)  -->
+		<div class="collapse  navbar-collapse" id="navBar" style='margin-bottom:0px;'> 
+			<ul class="nav navbar-nav"> 
+				<li><a href="#">首页</a></li> 
+				<li><a href="#">公司介绍</a></li>
+				<li><a href="#">产品中心</a></li>
+				<li><a href="#">行业方案</a></li>
+				<li><a href="#">公司新闻</a></li>
+				<li><a href="#">典型客户</a></li>
+				<li><a href="#">合作伙伴</a></li>
+				<li><a href="#">联系我们</a></li>
+			</ul>
+		</div>
+	</div>
+ </div>
+ <div class='container'>
+<!-- (设置子元素居中显示) -->
+  <div class='row  justify-content-center'>
+<!--  (超大屏幕占2个宫格，大屏幕占3个宫格，台式机占4个宫格，pad上占5个宫格，手机上占10个宫格)  填完一行即可-->
+	<div class='item col-xl-2 col-lg-3  col-md-4  col-sm-5  col-10'></div>
+	<div class='item col-xl-2 col-lg-3  col-md-4  col-sm-5  col-10'></div>
+<div class='item col-xl-2 col-lg-3  col-md-4  col-sm-5  col-10'></div>
+<div class='item col-xl-2 col-lg-3  col-md-4  col-sm-5  col-10'></div>
+<div class='item col-xl-2 col-lg-3  col-md-4  col-sm-5  col-10'></div>
+<div class='item col-xl-2 col-lg-3  col-md-4  col-sm-5  col-10'></div>
+<div class='item col-xl-2 col-lg-3  col-md-4  col-sm-5  col-10'></div>
+<div class='item col-xl-2 col-lg-3  col-md-4  col-sm-5  col-10'></div>
+<div class='item col-xl-2 col-lg-3  col-md-4  col-sm-5  col-10'></div>
+  </div>
+  </div>
+ </body>
+</html>

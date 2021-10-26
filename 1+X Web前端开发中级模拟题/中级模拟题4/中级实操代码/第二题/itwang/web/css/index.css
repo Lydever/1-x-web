@@ -1,0 +1,27 @@
+.tab2 {
+	background-color: #eee;
+	padding: 60px 20px;
+	text-align: center;
+}
+.tab2 img {
+	width: 40%;
+	height: 40%;
+}
+.tab3 {
+	padding: 60px 20px;
+	text-align: center;
+}
+.tab3 img {
+	width: 65%;
+	height: 65%;
+}
+
+
+@media only screen and (min-width:768px ) {
+		.tab2-text {
+		float: left;
+	}
+	.tab2-img {
+		float: right;
+	}
+}

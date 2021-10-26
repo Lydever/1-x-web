@@ -1,0 +1,6 @@
+*{margin:0;padding:0}
+.fakeimg {
+    height: 200px;
+    background: #aaa;
+}
+img{width:100%;height:auto}

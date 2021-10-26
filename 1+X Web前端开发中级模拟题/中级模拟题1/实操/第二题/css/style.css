@@ -1,0 +1,47 @@
+body,h1,h2,h3,h4,h5,h6,p,ol,ul,dl,dd{
+	margin: 0;
+	padding: 0;
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.box{
+	width: 100%;
+	height: 300px;
+	background: url("../img/timg.jpg") center;
+}
+.list{
+	width: 700px;
+	margin:0 auto 50px;
+}
+.list .title{
+	font-size: 22px;
+	line-height: 60px;
+}
+.list ul{
+	____(1)____;/*设置盒子投影，颜色为#CCC,模糊度为15px*/
+}
+.list ul li{
+	position: relative;
+	padding:20px;
+	border-bottom:1px dashed #ccc;
+}
+.list ul li h2{
+	width: 500px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: normal;
+	font-size: 16px;
+}
+.list ul li h2 a{
+	color:#333;
+}
+.list ul li span{
+	position: absolute;
+	top:20px;
+	right:20px;
+}

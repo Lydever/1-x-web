@@ -1,0 +1,17 @@
+INSERT INTO `user` VALUES (1, 'liubei', 'cd6a9199617a33f315fc0e644c9bf5a7', 'liubei@qq.com');
+INSERT INTO `user` VALUES (2, 'guanyu', '9af5340d36ba95ed9c1f249dbd7f008f', 'guanyu@163.com');
+INSERT INTO `user` VALUES (3, 'zhangfei', 'd58f2170fedb27250f52b7b0409a5f96', 'zhangfei@126.com');
+INSERT INTO `user` VALUES (4, 'songjiang', '8f8f121168bd1ab852716d1eb75fe486', 'songjiang@qq.com');
+INSERT INTO `user` VALUES (8, 'xiaoming', '97304531204ef7431330c20427d95481', 'xiaoming@163.com');
+INSERT INTO `user` VALUES (11, 'xiaohong', '1167eac4687a0d8aae4d01efe9274cda', 'xiaohong@163.com');
+INSERT INTO `user` VALUES (12, 'xiaoli', '4e65faa1e8462dce1affab7d66389367', 'xiaoli@qq.com');
+INSERT INTO `user` VALUES (13, 'xiaoliu', '091bf7d1a0b15da0812295dc6f33d2ba', 'xiaoming@163.com');
+INSERT INTO `user` VALUES (17, 'xiaoma', 'd86ac8d11918df21b8b0d4918df597f0', 'xiaoma@qq.com');
+INSERT INTO `user` VALUES (19, 'zhangsan', '01d7f40760960e7bd9443513f22ab9af', 'zhangsan@qq.com');
+INSERT INTO `user` VALUES (20, 'xiaogang', '7301d99db5aa1ad722f7539bf7adf415', 'xiaogang@qq.com');
+INSERT INTO `user` VALUES (24, 'xiaoliu', '091bf7d1a0b15da0812295dc6f33d2ba', 'xiaoming@163.com');
+INSERT INTO `user` VALUES (25, 'xiaoli', '4e65faa1e8462dce1affab7d66389367', 'xiaoli@qq.com');
+INSERT INTO `user` VALUES (26, 'xiaogou', 'd3648b78c4d4fb6243c92b666122b164', 'xiaogou@qq.com');
+INSERT INTO `user` VALUES (28, 'liubei', 'cd6a9199617a33f315fc0e644c9bf5a7', 'liubei@qq.com');
+INSERT INTO `user` VALUES (29, 'songjiang', '8fbd98d8e7ba370ca708c6484e050e3c', 'songjiang@qq.com');
+INSERT INTO `user` VALUES (30, 'zhangsan', '01d7f40760960e7bd9443513f22ab9af', 'zhangsan@163.com');

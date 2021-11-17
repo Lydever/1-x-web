@@ -3,7 +3,7 @@ web 前端开发等级考证模拟卷
 
 # 下载 & 拉取
  - 方法一：直接 DownLoad Zip
- - 方法二：git clone https://github.com/Lydever/web-1-x.git
+ - 方法二：`git clone https://github.com/Lydever/web-1-x.git`
 
 共5套完整的模拟卷：
 ![图片](https://user-images.githubusercontent.com/65069676/138794485-0da23cd0-d855-4274-9ddf-67e74137f5fc.png)
